@@ -36,6 +36,10 @@ class I:
         return is_url(self.input)
 
     @property
+    def is_dict(self):
+        return isinstance(self.input, dict)
+
+    @property
     def line_count(self):
         line_count = len(self.input_string.split('\n'))
         return line_count
